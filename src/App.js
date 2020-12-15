@@ -1,10 +1,14 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages";
+import SigninPage from "./pages/signin";
 
 export default function App() {
   return (
     <Router>
-      <Home />
+      <Switch>
+        <Route path="/" exact component={Home} />
+        <Route path="/signin" component={SigninPage} />
+      </Switch>
     </Router>
   );
 }
