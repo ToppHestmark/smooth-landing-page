@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import theme from "../../../shared/theme";
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.section`
   color: #fff;
   background: ${({ lightBg }) =>
     lightBg ? theme.colors.light1 : theme.colors.dark1};

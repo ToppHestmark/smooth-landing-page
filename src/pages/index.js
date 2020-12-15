@@ -5,9 +5,10 @@ import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/infoSection";
 import {
   homeObjOne,
-  homeObjThree,
   homeObjTwo,
+  homeObjThree,
 } from "../components/infoSection/data";
+import Services from "../components/Services";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ export default function Home() {
       <HeroSection />
       <InfoSection {...homeObjOne} />
       <InfoSection {...homeObjTwo} />
+      <Services />
       <InfoSection {...homeObjThree} />
     </>
   );
