@@ -26,6 +26,9 @@ export default function InfoSection({
   buttonLabel,
   image,
   alt,
+  primary,
+  dark,
+  dark2,
 }) {
   return (
     <InfoContainer lightBg={lightBg} id={id}>
@@ -37,7 +40,17 @@ export default function InfoSection({
               <Heading lightText={lightText}> {headLine} </Heading>
               <Subtitle darkText={darkText}> {description} </Subtitle>
               <BtnWrap>
-                <Button1 primary dark to="home">
+                <Button1
+                  duration={500}
+                  spy={true}
+                  smooth={true}
+                  primary={primary ? 1 : 0}
+                  dark={dark ? 1 : 0}
+                  dark2={dark2 ? 1 : 0}
+                  exact="true"
+                  offset={-10}
+                  to="home"
+                >
                   {" "}
                   {buttonLabel}{" "}
                 </Button1>
