@@ -6,8 +6,8 @@ import theme from "../../../shared/theme";
 export const Nav = styled.nav`
   background: ${({ scrollNav }) =>
     scrollNav ? theme.colors.dark2 : "transparent"};
-  height: 10vh;
-  margin-top: -10vh;
+  height: 80px;
+  margin-top: -80px;
   display: flex;
   justify-content: center;
   font-size: 1rem;
@@ -82,7 +82,7 @@ export const NavLinks = styled(LinkScroll)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid ${(props) => props.theme.colors.primary};
+    border-bottom: 3px solid ${(props) => props.theme.colors.primary} !important;
   }
 `;
 
