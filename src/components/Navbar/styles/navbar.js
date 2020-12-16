@@ -1,9 +1,11 @@
 import styled from "styled-components/macro";
 import { Link as LinkRouter } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
+import theme from "../../../shared/theme";
 
 export const Nav = styled.nav`
-  background: ${(props) => props.theme.colors.dark2};
+  background: ${({ scrollNav }) =>
+    scrollNav ? theme.colors.dark2 : "transparent"};
   height: 10vh;
   margin-top: -10vh;
   display: flex;
