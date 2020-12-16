@@ -1,3 +1,4 @@
+import { animateScroll as scroll } from "react-scroll";
 import {
   FaFacebook,
   FaInstagram,
@@ -22,6 +23,10 @@ import {
 } from "./styles/footer";
 
 export default function Footer() {
+  const toggleHome = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <FooterContainer>
       <FooterWrap>
@@ -63,7 +68,10 @@ export default function Footer() {
         </FooterLinksContainer>
         <SocialMedia>
           <SocialMediaWrap>
-            <SocialLogo to="/"> Wassap </SocialLogo>
+            <SocialLogo to="/" onClick={toggleHome}>
+              {" "}
+              Wassap{" "}
+            </SocialLogo>
             <WebsiteRights>
               Wassap © {new Date().getFullYear()} All rights reserved.
             </WebsiteRights>

@@ -10,5 +10,6 @@ export default {
     light1: "#f9f9f9",
     light2: "#f7fafa",
     footerBg: "#101522",
+    formBg: "#010101",
   },
 };

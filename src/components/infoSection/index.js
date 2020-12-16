@@ -41,6 +41,7 @@ export default function InfoSection({
               <Subtitle darkText={darkText}> {description} </Subtitle>
               <BtnWrap>
                 <Button1
+                  to="home"
                   duration={500}
                   spy={true}
                   smooth={true}
@@ -49,7 +50,6 @@ export default function InfoSection({
                   dark2={dark2 ? 1 : 0}
                   exact="true"
                   offset={-10}
-                  to="home"
                 >
                   {" "}
                   {buttonLabel}{" "}
